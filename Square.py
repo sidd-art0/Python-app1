@@ -2,7 +2,7 @@
 import time
 from flyt_python import api
 
-drone = api.navigation(timeout=120000)  # instance of flyt droneigation class
+drone = api.navigation(timeout=120000) 
 
 time.sleep(3)
 
@@ -27,5 +27,4 @@ drone.position_set(0, -6.5, 0, relative=True)
 print  ('6. Landing')
 drone.land(async=False)
 
-# shutdown the instance
 drone.disconnect()
