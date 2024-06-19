@@ -8,12 +8,12 @@ time.sleep(3)
 
 print ('0. taking off till 10m')
 drone.take_off(10.0)
-print ('taking down 5 m')
+print ('taking down 10 m')
 
-print (' move in a triangular trajectory of side length 10m at a height of 5m')
+print (' move in a triangular trajectory of side length 10m at a height of 10m')
 
 print (' 1. moving from Point A to B of triangle ABC')
-drone.position_set(8.0, 6.0, 5, relative=True)
+drone.position_set(8.0, 6.0, 10, relative=True)
 
 print (' 2. moving from Point B to C of triangle ABC')
 drone.position_set(-8.0, 6.0, 0, relative=True)
